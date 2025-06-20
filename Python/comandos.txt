@@ -1,0 +1,12 @@
+Estructura archivo python
+
+nombre_archivo.py
+
+
+Lenguaje bash
+
+ls = enlistar los elementos del punto en que me encuentro
+pwd = mostrar la ubicación en donde nos encontramos
+cd = acceder a carperta/directorio
+cd.. = regresar a carpeta anterior
+clear = limpiar pantalla
