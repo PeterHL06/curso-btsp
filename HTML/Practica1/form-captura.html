@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Captura</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <form>
+        <legend class="form-tittle">
+            <h2>2A. Práctica. Formulario de captura.</h2>
+        </legend>
+        <fieldset>
+            <legend>
+                <h3>1. Datos Personales.</h3>
+            </legend>
+            <!--Nombre-->
+            <div style="margin-bottom: 20px;">
+                <label for="apellidop">Apellido Parteno: </label>
+                <input type="text" name="apellidop" id="apellidop" required>
+                <label for="apellidom">Apellido Marteno: </label>
+                <input type="text" name="apellidom" id="apellidom" required>
+                <label for="nombre">Nombre(s): </label>
+                <input type="text" name="nombre" id="nombre" required>
+            </div>
+            <!--Edad-->
+            <div style="margin-bottom: 20px;">
+                <label for="edad">Edad: </label>
+                <input type="number" name="edad" id="edad" min="1" max="120" required>
+                <!-- Fecha Nacimiento -->
+                <label for="date">Fecha de Nacimiento: </label>
+                <input type="date" name="date" id="date">
+                <!--Género-->
+                <label for="genero">Genero: </label>
+                <select name="genero" id="genero">
+                    <option value="" selected hidden disabled></option>
+                    <option value="1">Masculino</option>
+                    <option value="2">Femenino</option>
+                    <option value="3">Otro</option>
+                </select>
+            </div>
+            <!-- Teléfono -->
+            <div style="margin-bottom: 20px;">
+                <label for="telefono">Teléfono: </label>
+                <input type="tel" name="telefono" id="telefono" required>
+                <!-- email -->
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" required>
+            </div>
+        </fieldset>
+        
+        <fieldset>
+            <legend>
+                <h3>2. Preguntas.</h3>
+            </legend>
+            <ol>
+                <li>¿Cuál es tu sistema operativo?</li>
+                <input type="radio" id="radio1" value="opción1">
+                <label for="radio1">Windows</label><br>
+                <input type="radio" id="radio2" value="opción2">
+                <label for="radio2">macOS</label><br>
+                <input type="radio" id="radio2" value="opción2">
+                <label for="radio2">Linux</label><br>
+                <br>
+
+                <li>¿Usted tiene conocimientos en programación antes de este curso?</li>
+                <label for="html"></label>
+                <input type="radio" id="radio1" value="opción1">
+                <label for="radio1">Si</label><br>
+                <input type="radio" id="radio2" value="opción2">
+                <label for="radio2">No</label><br>
+                <br>
+
+                <!-- Checkbox option -->
+                <label>Selecione los lenguajes que conoce: </label><br>
+                <input type="checkbox" id="java" value="opción1">
+                <label for="check1">Java</label><br>
+                <input type="checkbox" id="c++" value="opción2">
+                <label for="check2">C++</label><br>
+                <input type="checkbox" id="sql" value="opción3">
+                <label for="check1">SQL</label><br>
+                <input type="checkbox" id="python" value="opción4">
+                <label for="check1">Python</label><br>
+                <input type="checkbox" id="c" value="opción5">
+                <label for="check1">C</label><br>
+                <input type="checkbox" id="js" value="opción6">
+                <label for="check1">JS</label><br>
+            </ol>
+        </fieldset>
+
+        <fieldset>
+            <legend>
+                <h3>3. Comentarios finales.</h3>
+            </legend>
+            <!-- Comentarios -->
+            <label for="textarea">Escribe tus comentarios: </label><br>
+            <textarea name="comentarios" id="comentarios" rows="6" cols="60"></textarea>
+            <br><br>
+
+            <!-- Botones -->
+            <button type="submit" class="btn btn-enviar">Enviar</button> <!--Enviar el formulario-->
+            <button type="button" class="btn btn-siguiente">Siguiente</button> <!--Siguiente formulario-->
+            <br>
+        </fieldset>
+    </form>
+</body>
+</html>
+
+<!-- hoover
+onclick
+style caja de <input>
+salto de linea sin br -->
