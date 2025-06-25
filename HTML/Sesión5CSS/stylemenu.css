@@ -1,0 +1,47 @@
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: white;
+}
+
+section{
+    text-align: center;
+    color: white;
+}
+
+main{
+    text-align: center;
+}
+
+table{
+    text-align: center; /* Centra horizontalmente */
+    display: flex; /* Para centrar verticalmente */
+    justify-content: center; /* Centra horizontalmente con flexbox */
+    align-items: center;
+}
+
+tr{
+    text-align: center;
+}
+
+th{
+    text-align: center;
+}
+
+#encabezado{
+    color:white;
+    background-color: rgba(0,255,255,.6);
+    background-image: url(./imagenes/grupo-axo.jpg);
+    height: 200px;
+    width: 200px;
+}
+
+#fondo{
+    color:black;
+    background-color: rgba(247, 247, 247, 0.6);
+    background-image: url(./imagenes/menu.avif);
+    height: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}

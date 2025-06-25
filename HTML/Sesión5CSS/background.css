@@ -1,0 +1,16 @@
+#fondo{
+    color:black;
+    /* background-color: burlywood; */
+    background-color: rgba(0,255,255,.6);
+    /* opacity: 0.3; */
+    background-image: url(./imagenes/grupo-axo.jpg);
+    height: 200px;
+    /* width: 200px; */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.información{
+    color: blue;
+}
