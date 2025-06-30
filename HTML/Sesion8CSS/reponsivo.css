@@ -1,0 +1,13 @@
+div{
+    display: grid;
+    grid-template-columns: minmax(100px, 1fr) minmax(300px, 5fr);
+}
+
+aside{
+    border: 1px black solid;
+    height: 100vh;
+}
+
+main{
+    border: 1px red solid;
+}

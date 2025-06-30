@@ -1,0 +1,17 @@
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50px 1fr 50px;
+    height: 100vh;
+    grid-template-areas:
+    "encabezado encabezado encabezado"
+    "nav nav nav"
+    "contenido contenido contenido"
+    "pie pie pie"
+}
+
+.contenedor header{
+    background-color: darkolivegreen;
+    grid-area: encabezado;
+}
+

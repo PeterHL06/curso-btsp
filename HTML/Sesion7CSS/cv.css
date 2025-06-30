@@ -1,0 +1,45 @@
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 50px 1fr 50px;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    grid-template-areas:
+    "encabezado encabezado encabezado"
+    "nav nav nav"
+    "contenido contenido contenido"
+    "pie pie pie"
+}
+
+.contenedor header{
+    background-color: darkolivegreen;
+    grid-area: encabezado;
+    color: white;
+    text-align: center;
+}
+
+.contenedor nav{
+    background-color: lightcyan;
+    grid-area: nav;
+    color: darkblue;
+    text-align: center;
+}
+.contenedor main{
+    background-color: gray;
+    grid-area: contenido;
+    color: white;
+    text-align: center;
+}
+.contenedor aside{
+    background-color: black;
+    grid-area: costado;
+    color: white;
+    text-align: center;
+}
+.contenedor footer{
+    background-color: blue;
+    grid-area: pie de pagina;
+    color: white;
+    text-align: center;
+}

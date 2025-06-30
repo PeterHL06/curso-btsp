@@ -1,0 +1,23 @@
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50px 1fr 50 px;
+}
+
+.contenedor header{
+    background-color: darkolivegreen;
+    grid-column: 1/-1;
+}
+
+.contenedor main{
+    background-color: darkred;
+}
+
+.contenedor aside{
+    background-color: cadetblue;
+}
+
+.contenedor footer{
+    background-color: darkgoldenrod;
+    grid-column: 1/-1;
+}

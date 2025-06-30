@@ -1,0 +1,19 @@
+.contenedor{
+    border: 2px black solid;
+    background-color: cadetblue;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+}
+
+.contenedor div{
+    background-color: rgb(237, 205, 100);
+    border-radius: 5px;
+    border: 1px black solid;
+}
+
+    @media (max-width:600px) {
+        .contenedor{
+            grid-template-columns: 1fr 1fr;
+        }
+    }
