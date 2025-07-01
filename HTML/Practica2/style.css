@@ -1,8 +1,23 @@
-.hero {
-      background: linear-gradient(to right, #0d6efd, #6610f2);
-      color: white;
+header {
+      background: linear-gradient(#655f5b, #ae9783);
+      box-shadow: 0 6px 20px 0 rgba(0, 0, 0, .2), 0 13px 24px -11px rgba(49, 31, 14, 0.6);
+      color: rgb(255, 255, 239);
       padding: 100px 20px;
       text-align: center;
+}
+
+nav{
+      background: linear-gradient(660deg, #ebded4, #ae9783);
+      box-shadow: 0 6px 20px 0 rgba(0, 0, 0, .2), 0 13px 24px -11px rgba(49, 31, 14, 0.6);
+      color: rgb(217, 198, 198);
+      padding: 100px 20px;
+      text-align: center;
+}
+
+ul{
+      background: linear-gradient( #d8d2cd, #7c6958,  #d8d2cd);
+      border-radius: 6px;
+      color: rgb(78, 65, 65);
 }
 
 .card img {
@@ -11,7 +26,8 @@
 }
 
 footer {
-      background-color: #f8f9fa;
+      background: linear-gradient(660deg, #eee, #621d1d);
+      color: rgb(255, 255, 239);
       padding: 30px 0;
       text-align: center;
 }
