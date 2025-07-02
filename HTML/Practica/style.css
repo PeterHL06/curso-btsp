@@ -9,6 +9,18 @@
     background-color: darkslategray;
 }
 
+.nav-link{
+    font-size: 15pt !important;
+    font-weight:400;
+    color: beige;
+}
+
+.active{
+    /* background-color: aqua; */
+    border-radius: 10px;
+    color: beige;
+}
+
 .carousel-item{
     max-height: 15em;
 }
