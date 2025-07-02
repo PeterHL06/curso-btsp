@@ -1,0 +1,14 @@
+
+
+.logoPortada{
+    max-width: 70px;
+    border-radius: 50%;
+}
+
+.navbar{
+    background-color: darkslategray;
+}
+
+.carousel-item{
+    max-height: 15em;
+}

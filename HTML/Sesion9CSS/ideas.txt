@@ -1,0 +1,7 @@
+Elementos:
+    Carrusel
+    Formulario
+    nav-bar
+    boton-navegación
+    collapse
+    spinner
