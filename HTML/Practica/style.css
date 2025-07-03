@@ -26,14 +26,23 @@ body{
     font-weight: 400;
     color: beige;
 }
+.nav-link:hover{
+    color: rgb(32, 157, 157);
+}
 
 .active {
     background-color: rgb(32, 157, 157);
     border-radius: 10px;
 }
 
-.carousel-item {
-    max-height: 15em;
+.carousel-item { 
+    height: auto;
+    overflow: 100%;
+}
+
+.carrusel.inner{
+    height: 15em;
+    overflow: hidden;
 }
 
 footer {
