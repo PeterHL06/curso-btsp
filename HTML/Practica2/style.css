@@ -6,6 +6,11 @@ header {
       text-align: center;
 }
 
+.logoPortada{
+    max-width: 70px;
+    border-radius: 50%;
+}
+
 nav{
       background: linear-gradient(660deg, #ebded4, #ae9783);
       box-shadow: 0 6px 20px 0 rgba(0, 0, 0, .2), 0 13px 24px -11px rgba(49, 31, 14, 0.6);
