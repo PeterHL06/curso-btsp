@@ -45,6 +45,13 @@ body{
     overflow: hidden;
 }
 
+.divisor{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 5px;
+    background-color: beige;
+}
+
 footer {
     background-color: darkslategrey;
 
