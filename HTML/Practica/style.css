@@ -1,33 +1,28 @@
-body{
+body {
     background: linear-gradient(600deg, #56746e, #1c6456);
-}
-
-
-.logoPortada {
-    max-width: 70px;
-    border-radius: 50%;
-}
-
-.img {
-    max-height: 30em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content:center;
-    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
 }
 
 .navbar {
     background-color: rgb(22, 32, 32);
 }
 
-.nav-link {
-    font-size: 15pt !important;
-    font-weight: 400;
-    color: beige;
+.logoPortada {
+    max-width: 70px;
+    border-radius: 50%;
 }
-.nav-link:hover{
-    color: rgb(32, 157, 157);
+
+.nav-link {
+    font-size: 15pt;
+    font-weight: 400;
+    color: beige !important;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: rgb(32, 157, 157) !important;
 }
 
 .active {
@@ -35,24 +30,50 @@ body{
     border-radius: 10px;
 }
 
-.carousel-item { 
-    height: auto;
-    overflow: 100%;
+.img {
+    max-height: 30em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 
-.carrusel.inner{
+.img-fit {
+    width: 110%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.carousel-item {
+    /*height: auto;*/
+    overflow: hidden;
+    transition: transform 1s ease-in-out;
+}
+
+.carrusel.inner {
     height: 15em;
     overflow: hidden;
 }
 
-.divisor{
+.carousel-img-fit {
+    width: 80%;
+    height: 500px;
+    object-fit: cover;
+}
+
+
+.divisor {
     text-align: center;
     text-transform: uppercase;
     padding: 5px;
     background-color: beige;
+    margin: 20px 0;
 }
 
 footer {
     background-color: darkslategrey;
+    color: white;
+    padding: 15px 0;
 
 }
