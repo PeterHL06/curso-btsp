@@ -13,7 +13,34 @@
     <header>
         <nav class="navbar navbar-expand-md">
             <div class="container-fluid">
-                <a class="navbar-brand" href="./index.html">Regresar</a>
+                <button class="navbar-toggler navbar-dark bg-dark" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse text-center" id="navbar-toggler">
+                    <a class="navbar-brand d-none d-md-block" href="#">
+                        <img src="./img/logo.webp" class="logoPortada" alt="Logo de la página">
+                    </a>
+                    <ul class="navbar-nav d-flex justify-content-center align-items-center me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#"> Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./motos.html">Motos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="./HTML/Practica/autos.html">Autos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">Contactanos</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
             </div>
         </nav>
     </header>
