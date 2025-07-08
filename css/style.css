@@ -40,9 +40,19 @@ body {
 }
 
 .img-fit {
-    width: 110%;
-    height: 300px;
+    width: 100%;
+    height: 400px;
     object-fit: cover;
+}
+
+.konexo {
+    max-width: 100px;
+    border-radius: 10%;
+}
+
+.scop {
+    max-width: 80px;
+    border-radius: 10%;
 }
 
 .carousel-item {
@@ -51,13 +61,13 @@ body {
     transition: transform 1s ease-in-out;
 }
 
-.carrusel.inner {
+/* .carrusel.inner {
     height: 15em;
     overflow: hidden;
-}
+} */
 
 .carousel-img-fit {
-    width: 80%;
+    width: 100%;
     height: 500px;
     object-fit: cover;
 }
@@ -78,21 +88,99 @@ footer {
 
 }
 
-
-.curriculum{
-    
-}
-
 .curriculum .fecha {
     font-weight: 800;
     color: rgb(250, 133, 0);
 }
 
-.curriculum .puesto {
+.curriculum .fechae {
+    font-weight: 800;
+    color: rgb(18, 78, 19);
+}
+
+.curriculum .empresa {
     font-weight: 200;
+    font-weight: 600; 
     color: rgb(250, 133, 0);
 }
+
+.curriculum .empresa1 {
+    font-weight: 200;
+    font-weight: 600; 
+    color: rgb(74, 13, 13);
+}
+
+.curriculum .escuela {
+    font-weight: 200;
+    font-weight: 600; 
+    color: rgb(23, 93, 24);
+}
+.curriculum .escuela1 {
+    font-weight: 200;
+    font-weight: 600; 
+    color: rgb(250, 133, 0);
+}
+
+.curriculum .puesto {
+    font-size: 10pt;
+    font-weight: 100;
+    color: rgb(49, 28, 3);
+}
+
+.curriculum .carrera {
+    font-size: 10pt;
+    font-weight: 100;
+    color: rgb(74, 44, 6);
+}
+
 .curriculum .title {
     font-weight: 800;
     color: rgb(255, 251, 188);
+}
+
+.curriculum .descripcion {
+    background-color: darkslategrey;
+    align-content: center;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 10pt;
+    font-weight: 100;
+    color: rgb(204, 245, 244);
+}
+
+.curriculum .descripcion-e {
+    background-color: rgb(14, 56, 56);
+    align-content: center;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 10pt;
+    font-weight: 100;
+    color: rgb(204, 245, 244);
+}
+
+/*Seccion del formulario */
+.form-container{
+  background-color:rgb(67, 129, 129);
+}
+
+.form-div{
+  border: 1px solid darkcyan;
+  background-color: rgb(178, 223, 225);
+  max-width: 30em;
+  height: 15em;
+  border-radius: 15px;
+  padding: 2em;
+  margin: 2em;
+}
+
+.form-control{
+  font-weight: 1em;
+}
+
+.form-label, form-check-label{
+  font-size:1em;
+}
+
+.form-row{
+  justify-content: center;
 }

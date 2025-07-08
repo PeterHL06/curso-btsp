@@ -51,10 +51,10 @@ body {
     transition: transform 1s ease-in-out;
 }
 
-.carrusel.inner {
+/* .carrusel.inner {
     height: 15em;
     overflow: hidden;
-}
+} */
 
 .carousel-img-fit {
     width: 80%;

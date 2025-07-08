@@ -11,11 +11,12 @@
 
     <!-- Icono en la pestaña de la página -->
     <link rel="icon" type="image/x-icon" href="img/logo.webp">
-    <title>Bootstrap| Práctica de desarrollo</title>
+    <title>Mi Página | Mi CV</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
 </head>
 
 <body>
@@ -34,9 +35,9 @@
                         <img src="./img/logo.webp" class="logoPortada" alt="Logo de la página alien">
                     </a>
                     <ul class="navbar-nav d-flex align-items-center w-100">
-                        <li class="nav-item me-auto">
-                            <a class="nav-link active" aria-current="page" href="#presentacion">
-                                Pedro Hurtado<!-- <small> | Sobre mí</small> -->
+                        <li class="nav-item me-auto text-center">
+                            <a class="nav-link active" aria-current="page" href="#">
+                                <strong>Pedro Hurtado</strong> <br>
                             </a>
                         </li>
                         <li class="nav-item">
@@ -53,30 +54,77 @@
     </header>
 
     <main class="container mt-5 pt-5">
-        <!-- Imagenes de presentación -->
+        <!-- Presentador -->
 
         <section class="row mt-4" id="presentacion">
 
-            <div class="col-6">
-                <div class="card text-center p-5">
+            <div class="col-2"></div>
+            <div class="col-4">
+                <div class="card text-center p-5 bg-dark">
                     <div class="card-body">
-                        <img src="./img/perfil.jfif" alt="Bentley" class="img-fit rounded-circle mx-auto"
-                            style="width: 150px; height: 150px; object-fit: cover;">
+                        <img src="./img/perfil.jfif" alt="perfil" class="img-fit rounded-circle mx-auto"
+                            style="width: 150px; height: 150px; object-fit: cover">
                     </div>
-                    <h4 class="card-title"><strong>Pedro Hurtado López</strong></h4>
-
+                    <h4 class="card-title text-white"><strong>Pedro Hurtado López</strong></h4>
+                    <small class="card-title text-white">Engineer - Developer</small>
                 </div>
             </div>
-            <div class="col-6">
-                <h1>Hola</h1>
+            <div class="col-4">
+                <h2><strong>Hola! Soy Pedro Hurtado,</strong></h2>
                 <p class="mb-4">Esto es lo que soy y lo que hago</p>
-                <!-- <button class="btn btn-sm btn-primary" href="#curriculum">Curriculum</button> -->
-                <!-- <button class="btn btn-sm btn-secondary" href="#contacto">Contacto</button> -->
-
-                <p class=" mt-4">
-                    Me gustan las motocicletas, aprender, el clima otoñal, las auroras boreales, TENGO NOVIA PRRS
+                <hr style="background-color: rgb(154, 247, 246); height: 5px; width: 100%;">
+                <small class=" mt-4 justify-content-center">
+                    Me gustan las motocicletas, los autos, aprender, programar, el clima otoñal, la lluvia, la luna, las
+                    auroras boreales y salir con mi novia.
+                </small><br><br>
+                <p class="mb-4"
+                    style="background-color: darkslategrey; border-radius: 5px;color:rgb(204, 245, 244); text-align: center;">
+                    Profesión: Ingeniero en Eletrónica<br>
+                    Edad : 40 <br>
+                    Email : hurtado.lopez.pedro.6@gmail.com <br>
+                    Teléfono: (443) 184-97-44
                 </p>
             </div>
+            <div class="col-2"></div>
+
+            <!-- Redes sociales -->
+            <div class="container mt-5" style="background-color: rgb(154, 247, 246);">
+                <aside class="redes-social text-center py-3">
+                    <ul class="list-inline m-0">
+                        <li class="list-inline-item mx-2">
+                            <a href="https://twitter.com/intent/tweet?text=SiloCreativo&url=https://www.silocreativo.com/en/"
+                                target="_blank" class="text-dark fs-4">
+                                <i class="bi bi-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item mx-2">
+                            <a href="https://www.facebook.com/sharer.php?u=https://www.silocreativo.com/en/&t=SiloCreativo"
+                                target="_blank" class="text-dark fs-4">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item mx-2">
+                            <a href="https://www.pinterest.com/pin/find/?url=https://www.silocreativo.com/en/"
+                                target="_blank" class="text-dark fs-4">
+                                <i class="bi bi-pinterest"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item mx-2">
+                            <a href="https://web.whatsapp.com/" data-action="share/whatsapp/share"
+                                class="text-dark fs-4">
+                                <i class="bi bi-whatsapp"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item mx-2">
+                            <a href="https://accounts.google.com/servicelogin?hl=en-gb" class="text-dark fs-4">
+                                <i class="bi bi-envelope"></i> <!-- Newsletter -->
+                            </a>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+
+
 
             <div id="carouselExampleCaptions" class="carousel slide carousel-fade mt-4">
                 <div class="carousel-indicators">
@@ -89,29 +137,32 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="./img/moto_humo.avif" class="d-block w-100 carousel-img-fit" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>First slide label</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                                sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                                est laborum</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./img/moto2.avif" class="d-block w-100 carousel-img-fit" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Second slide label</h5>
-                            <p>Some representative placeholder content for the second slide.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
                         <img src="./img/HondaCBR.png" class="d-block w-100 carousel-img-fit" alt="...">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>Third slide label</h5>
-                            <p>Some representative placeholder content for the third slide.</p>
+                            <h5>Pasión por las motos</h5>
+                            <p>La combinación de libertad, emoción, adrenalida y aventura se convierten en una forma de
+                                vida. El sentir el viento y la emoción de la carretera
+                                mientras conduces... todo esto es más que solo un medio de transporte, es una fuente de
+                                felicidad
+                                y una conexión más allá de lo que la mayoría entendería.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/auto3.jpg" class="d-block w-100 carousel-img-fit" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>La admiración por autos</h5>
+                            <p>Más allá del motor y la carrocería, los autos representan comodidad, ingeniería y diseño.
+                                Cada línea y cada curva cuentan una historia de pasión, velocidad y estilo.
+                                Son el reflejo de sueños y tecnología rodando por la vida.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/auto_moto.jpg" class="d-block w-100 carousel-img-fit" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>La combinación Perfecta</h5>
+                            <p>Cuando el rugido de un motor se une al susurro del viento sobre dos ruedas, 
+                                nace una sinfonía de libertad. Autos y motos, potencias hermanas que recorren caminos distintos con un mismo espíritu: 
+                                ir más allá del destino, sintiendo cada kilómetro como un verso sobre el asfalto.</p>
                         </div>
                     </div>
                 </div>
@@ -128,160 +179,204 @@
             </div>
 
         </section>
-        <!-- Carrusel información -->
-        <section class="row d-flex justify-content-center mt-4 curriculum" id="curriculum">
 
-            <!-- Experiencia -->
-            <section>
-                <section class="row d-flex justify-content-center mt-4 curriculum" id="curriculum">
-                    <div class="col-12">
-                        <div class="title w-50 mb-4">
-                            Experiencia
-                        </div>
-                    </div>
+        <!-- Experiencia -->
 
-                    <div class="col-12 d-flex justify-content-center mb-4">
-                        <div class="card w-50">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-5">
-                                        <p class="mb-4 fecha">1984 - 2022</p>
-                                        <p class="puesto">PUESTO</p>
-                                        <p>Esperante</p>
-                                    </div>
-                                    <div class="col-7">
-                                        Esperé a mi novia
-                                    </div>
-                                </div>
-                            </div>
+        <hr style="background-color: rgb(154, 247, 246); height: 6px; width: 100%;">
 
-                        </div>
-                    </div>
-
-                    <div class="col-12  d-flex justify-content-center mb-4">
-                        <div class="card w-50">
-
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-5">
-                                        <p class="mb-4 fecha">1984 - 2022</p>
-                                        <p class="puesto">PUESTO</p>
-                                        <p>Esperante</p>
-                                    </div>
-                                    <div class="col-7">
-                                        Esperé a mi novia
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Educación -->
-                <section>
+        <section>
+            <section class="row d-flex justify-content-center mt-4 curriculum" id="curriculum">
+                <div class="col-12">
                     <div class="title w-50 mb-4">
-                        Educación
+                        Experiencia
                     </div>
-                    <div class="col-12 d-flex justify-content-center mb-4">
-                        <div class="card w-50">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-5">
-                                        <p class="mb-4 fecha">1984 - 2022</p>
-                                        <p class="puesto">PUESTO</p>
-                                        <p>Esperante</p>
-                                    </div>
-                                    <div class="col-7">
-                                        Esperé a mi novia
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="col-12  d-flex justify-content-center mb-4">
-                        <div class="card w-50">
-
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-5">
-                                        <p class="mb-4 fecha">1984 - 2022</p>
-                                        <p class="puesto">PUESTO</p>
-                                        <p>Esperante</p>
-                                    </div>
-                                    <div class="col-7">
-                                        Esperé a mi novia
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section>
-                    <div class="title w-50 mb-4">
-                        Educación
-                    </div>
-
-                    <div class="col-12  d-flex justify-content-center mb-4">
-                        <div class="card w-50">
-                            <div class="card-body">
-                                <ul>
-                                    <p><i class="bi bi-clipboard-data"></i> Analista de datos</p>
-                                    <p><i class="bi bi-clipboard-data"></i> Analista de datos</p>
-                                    <p><i class="bi bi-clipboard-data"></i> Analista de datos</p>
-                                </ul>
-                            </div>
-
-                        </div>
-                </section>
-
-            </section>
-
-
-            <section class="row">
-                <h3 class="divisor">
-                    Elige tu estilo.
-                </h3>
-            </section>
-            <section id="contacto" class="d-flex justify-content-center mt-4">
-
-                <div class="card w-50 mb-4">
-                    <div class="card-body">
-                        <form class="form-signin">
-                            <div class="text-center mb-4">
-                                <img class="mb-4 img-fit rounded-circle w-50 h-50" src="./img/logo.webp" alt=""
-                                    width="100" height="100">
-                                <h1 class="h3 mb-3 font-weight-normal">Conversemos</h1>
-                                <p>Si tiene algun proyecto o quieres platicar puedes contactarme</a>
-                                </p>
-                            </div>
-
-                            <div class="form-label-group">
-                                <label for="inputEmail">Nombre</label>
-                                <input type="email" id="inputEmail" class="form-control"
-                                    placeholder="¿Cómo quieres que te diga?" required autofocus>
-                            </div>
-
-                            <div class="form-label-group mt-3">
-                                <label for="inputPassword">Tema de conversación<noscript></noscript></label>
-                                <input type="password" id="inputPassword" class="form-control"
-                                    placeholder="¿De qé quieres platicar?" required>
-                            </div>
-                            <button class="btn btn-lg btn-primary btn-block mt-4" type="submit">
-                                <i class="bi-send pe-2"></i>
-                                Enviar mensaje
-                            </button>
-                        </form>
-                    </div>
-
-
                 </div>
 
+                <div class="col-12 d-flex justify-content-center mb-4">
+                    <div class="card w-50">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-4">
+                                    <img src="./img/logo-konexo.png" alt="konexo" class="konexo">
+                                    <p class="mb-4 mt-3 fecha">2015 - Presente</p>
+                                    <p class="empresa">Konexo Contact + Solution Center</p>
+                                    <p class="bi bi-clipboard-data puesto"> Analista Gestor en Tiempo Real (GTR)</p>
+                                    <p class="bi bi-clipboard-data puesto"> Analista de horarios</p>
+                                </div>
+                                <div class="col-8 mt-4">
+                                    <p class="descripcion">
+                                        Responsable de la creación, gestión y optimización de horarios laborales.
+                                        Asegurar la eficiencia y cumplimiento de las necesidades operativas de una
+                                        organización.
+                                        Análisis de la demanda de personal.
+                                        Planificación y programación de horarios y personal
+                                        Crear y mantener horarios de trabajo para empleados, considerando la demanda de
+                                        personal y las necesidades operativas.
+                                        Asignación de turnos y roles.
+                                        Gestión de ausencias y la generación de informes relacionados con la asistencia
+                                        y la productividad.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-12 d-flex justify-content-center mb-4">
+                    <div class="card w-50">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-4">
+                                    <img src="./img/logo-scop.png" alt="scop" class="scop">
+                                    <p class="mb-4 mt-3 fecha">2015 - Presente</p>
+                                    <p class="empresa1">Secretaria de Comunicaciones y Obras Públicas</p>
+                                    <p class="bi bi-laptop puesto"> Ingeniero en Cómputo</p>
+                                </div>
+                                <div class="col-8 mt-4">
+                                    <p class="descripcion">
+                                        Responsable de instalar, mantener y solucionar problemas de hardware y software
+                                        en sistemas informáticos. <br>
+                                        Soporte técnico: Mantenimiento preventivo y correctivo de equipos de cómputo,
+                                        impresoras, router y demás dispositivos.<br>
+                                        Configuración de equipos de cómputo.<br>
+                                        Instalación de equipos de cómputo.<br>
+                                        Mantenimiento preventivo y correctivo de sistema de redes.<br>
+                                        Configuración de sistema de redes.<br>
+                                        Instalación de sistema de redes.<br>
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 d-flex justify-content-center mb-4">
+                    <div class="card w-50">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-4">
+                                    <img src="./img/logo-scop.png" alt="scop" class="scop">
+                                    <p class="mb-4 mt-3 fecha">2003 - 2015</p>
+                                    <p class="empresa1">Secretaria de Comunicaciones y Obras Públicas</p>
+                                    <p class="bi bi-telephone-forward-fill puesto"> Técnico en Telefónica Rural</p>
+                                </div>
+                                <div class="col-8 mt-4">
+                                    <p class="descripcion">
+                                        Soporte técnico: Mantenimiento preventivo y correctivo de equipos de telefonía
+                                        rural de tipo:
+                                        Soporte técnico: Programación de equipos de telefonía rural de tipo:
+                                        Soporte técnico: Instalación de equipos de telefonía rural de tipo:
+                                        Punto a Punto, Celular y Satelital, instalación de infraestructura
+                                        para los equipos de telefonía, auxiliar de jefe de
+                                        departamento: capturista de datos, elaboración de
+                                        esquemas, diagramas, anteproyectos y programas anuales
+                                        de las funciones a desempeñar del personal.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </section>
 
+            <!-- Educación -->
+            <hr style="background-color: rgb(154, 247, 246); height: 6px; width: 100%;">
 
+            <section>
+                <section class="row d-flex justify-content-center mt-4 curriculum" id="educacion">
+                    <div class="col-12">
+                        <div class="title w-50 mb-4">
+                            Educación
+                        </div>
+                    </div>
+
+                    <div class="col-12 d-flex justify-content-center mb-4">
+                        <div class="card w-50">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <img src="./img/logo-itm.png" alt="konexo" class="konexo">
+                                        <p class="mb-4 mt-3 fechae">2007 - 2013</p>
+                                        <p class="escuela">Instituto Tecnológico de Morelia.</p>
+                                    </div>
+                                    <div class="col-8 mt-4 text-center">
+                                        <p class="descripcion-e">
+                                        <p class="bi bi-cpu-fill carrera"> Ingeniería en Electrónica.</p>
+                                        <p class="carrera"> Especialidad: Electrónica de Potencia.</p>
+                                        <p class="bi bi-mortarboard carrera"> Título Profesional</p>
+                                        <p class="carrera"> Cédula Electrónica</p>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-12 d-flex justify-content-center mb-4">
+                        <div class="card w-50">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <img src="./img/logo-conalep.jpg" alt="konexo" class="konexo">
+                                        <p class="mb-4 mt-3 fechae">1999 - 2002</p>
+                                        <p class="escuela">Colegio Nacional de Educación Profesional Técnica.</p>
+                                    </div>
+                                    <div class="col-8 mt-4 text-center">
+                                        <p class="descripcion-e">
+                                        <p class="bi bi-cpu carrera"> Técnico en Electrónica.</p>
+                                        <p class="carrera"> Especialidad: Electrónica Industrial.</p>
+                                        <p class="bi bi-mortarboard carrera"> Título Profesional</p>
+                                        <p class="carrera"> Cédula Electrónica</p>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Contactanos -->
+                <hr style="background-color: rgb(154, 247, 246); height: 6px; width: 100%;">
+
+                <section>
+                    <section class="row d-flex justify-content-center mt-4 curriculum" id="contacto">
+                        <section id="contacto" class="d-flex justify-content-center mt-4">
+                            <div class="card w-50 mb-4">
+                                <div class="card-body">
+                                    <form class="form-signin">
+                                        <div class="text-center mb-4">
+                                            <img class="mb-4 img-fit rounded-circle w-50 h-50" src="./img/logo.webp"
+                                                alt="#" width="100" height="100">
+                                            <h1 class="h3 mb-3 font-weight-normal">Conversemos</h1>
+                                            <p>Si tiene algún proyecto o quieres platicar puedes contactarme</a>
+                                            </p>
+                                        </div>
+                                        
+                                        <div class="form-label-group">
+                                            <label for="inputEmail">Nombre</label>
+                                            <input type="email" id="inputEmail" class="form-control"
+                                                placeholder="¿Cómo quieres que te diga?" required>
+                                        </div>
+
+                                        <div class="form-label-group mt-3">
+                                            <label for="inputPassword">Tema de conversación<noscript></noscript></label>
+                                            <input type="password" id="inputPassword" class="form-control"
+                                                placeholder="¿De qé quieres platicar?" required>
+                                        </div>
+                                        <button class="btn btn-lg btn-primary btn-block mt-4" type="submit">
+                                            <i class="bi-send pe-2"></i>
+                                            Enviar mensaje
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </section>
+                    </section>
+                </section>
     </main>
 
     <footer class="bg text-white text-center py-3 m">
