@@ -141,13 +141,8 @@ footer {
 .curriculum .descripcion {
     background-color: darkslategrey;
     align-content: center;
-<<<<<<< HEAD
-    text-align: justify;
-    padding: 15px;
-=======
     
     padding: 5px;
->>>>>>> cbeecedc8eb8afb72cc88d10c7229124c54e6630
     border-radius: 10px;
     font-size: 10pt;
     font-weight: 100;
