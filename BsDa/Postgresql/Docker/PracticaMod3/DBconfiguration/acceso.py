@@ -59,11 +59,45 @@ def obtener_datos_usuario(username, password):
     except Exception as e:
         print("Error al consultar la base de datos:", e)
 
+def insertar_nvo_usuario(nombre, correo, telefono, fecha_nacimiento):
+    conn = conectar_db()
+    if not conn:
+        return
+    try:
+        cursor = conn.cursor()
+        query ="""
+            INSERT INTO usuarios 
+            (nombre, correo, telefono, fecha_nacimiento)
+            VALUES 
+            (%s, %s, %s,%s)
+        """
+
+        cursor.execute(query, (nombre, correo, telefono, fecha_nacimiento))
+        
+        conn.commit()
+        cursor.close()
+        conn.close()
+
+        print("Se insertaron los datos correctamente")
+
+    
+    except Exception as e:
+        print("Error al consultar la base de datos:", e)
+
+
 if __name__ == "__main__":
-    print("Inicio de sesión en la base de datos")
+    # print("Inicio de sesión en la base de datos")
   
     # Solicitar credenciales al usuario
-    username = input("Ingrese su usuario: ")
-    password = getpass.getpass("Ingrese su contraseña: ") # No muestra la contraseña al escribir
-    # Consultar la base de datos 
-    obtener_datos_usuario(username, password)
+    # username = input("Ingrese su usuario: ")
+    # password = getpass.getpass("Ingrese su contraseña: ") # No muestra la contraseña al escribir
+    # # Consultar la base de datos 
+    # obtener_datos_usuario(username, password)
+
+    print("Inserte los datos del nuevo usuario")
+    nombre = input("Ingrese el nombre del nuevo usuario: ")
+    correo = input("Ingrese el correo del nuevo usuario: ")
+    telefono = input("Ingrese el telefono del nuevo usuario: ")
+    fecha_nacimiento = input("Ingrese la fecha de nacimiento del nuevo usuario: ")
+
+    insertar_nvo_usuario(nombre, correo, telefono, fecha_nacimiento)

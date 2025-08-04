@@ -16,3 +16,16 @@ CREATE TABLE credenciales
     password_hash VARCHAR(255) NOT NULL,
     FOREIGN KEY (id_usuario) REFERENCES usuarios (id_usuario)
 );
+
+
+CREATE TABLE puestos_trabajo (
+    id_puesto SERIAL PRIMARY KEY,
+    nombre_puesto VARCHAR(100) NOT NULL,
+    descripcion TEXT
+);
+
+ALTER TABLE usuarios
+ADD COLUMN id_puesto INT;
+
+
+
