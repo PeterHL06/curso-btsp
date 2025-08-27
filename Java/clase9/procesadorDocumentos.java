@@ -65,7 +65,7 @@ public class procesadorDocumentos {
         for (Documento noti: listaDocumentos){
             noti.procesar();
             System.out.println("------");
-            System.out.print("\n"); 
+            //System.out.print("\n"); 
     }
 }    
 }
