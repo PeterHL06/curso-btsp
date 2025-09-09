@@ -11,7 +11,9 @@ package Java.clase13;
     }
 }*/
 
-public class Facturador{
+class Pedido{}
+
+class Facturador{
     public void facturar(Pedido pedido){
         //Todo el codigo de la logica de facturación
         System.out.println("Pedido Facturado.");
@@ -46,7 +48,7 @@ class NotificadorPorEmail implements ServicioDeNotificacion {
     }
 }
 
-public class NotificadorPorSMS implements ServicioDeNotificacion {
+class NotificadorPorSMS implements ServicioDeNotificacion {
 
     @Override
     public void notificar(Pedido pedido){
@@ -56,15 +58,41 @@ public class NotificadorPorSMS implements ServicioDeNotificacion {
 }
 
 class procesadorDePedidos {
-    private final facturador facturador;
+    private final Facturador facturador;
     private final Enviador enviador;
+    private final ServicioDeNotificacion notificador;
 
-    
+    public procesadorDePedidos(Facturador facturador, Enviador enviador, ServicioDeNotificacion notificador){
+        this.facturador=facturador;
+        this.enviador=enviador;
+        this.notificador=notificador;
+        }
+
+    public void procesar(Pedido pedido){
+        facturador.facturar(pedido);
+        enviador.Enviar(pedido);
+        notificador.notificar(pedido);
+    }
 }
 
 public class sistemaPedidos {
     
     public static void main(String[] args) {
+        Pedido pedido=new Pedido();
+
+        Facturador facturador=new Facturador();
+        Enviador enviador=new Enviador();
+
+        ServicioDeNotificacion notificadorEmail = new NotificadorPorEmail();
+        ServicioDeNotificacion notificadorSMS = new NotificadorPorSMS();
+
+        procesadorDePedidos procesador1 =new procesadorDePedidos(facturador, enviador, notificadorEmail);
+        procesador1.procesar(pedido);
         
+        System.out.println("---------");
+
+        procesadorDePedidos procesador2 = new procesadorDePedidos(facturador, enviador, notificadorSMS);
+        procesador2.procesar(pedido);
+
     }
 }
