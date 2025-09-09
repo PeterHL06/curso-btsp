@@ -14,9 +14,9 @@ class Empleado {
 
     }
 
-    public void setSalario(int salario) {
-        this.salario = salario;
-    }
+    //public void setSalario(int salariNuevo) {
+        //this.salario = salarioNuevo;
+    //}
 
     public int getSalario() {
         return salario;

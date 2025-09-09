@@ -1,5 +1,5 @@
 package Java.clase15.empresa.gestion;
-import Java.clase15.empresa.core.Empleado;
+import Java.clase15.empresa.extra.Empleado;
 
 public class Gestor {
 
@@ -8,6 +8,7 @@ public class Gestor {
         // ERROR DE COMPILACIÓN: Intenta acceder al salario directamente
 
         Empleado.setSalario(nuevoSalario);
+        System.out.println("");
 
     }
 
