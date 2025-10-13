@@ -8,7 +8,7 @@ public class TiendaDreams {
     public static void main(String[] args) {
         int opcion;
         do {
-            System.out.println("\n--- MENÚ TIENDA DREAMS ---");
+            System.out.println("\n--- MENU TIENDA DREAMS ---");
             System.out.println("1. Registrar producto");
             System.out.println("2. Registrar cliente");
             System.out.println("3. Mostrar inventario");
