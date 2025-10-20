@@ -13,6 +13,11 @@ return new class extends Migration
     {
         Schema::create('asistentes', function (Blueprint $table) {
             $table->id();
+            $table->string('titulo');
+            $table->string('descripcion');
+            $table->date('fecha_inicio');
+            $table->date('fecha_fin');
+            $table->string('ubicacion');
             $table->timestamps();
         });
     }
