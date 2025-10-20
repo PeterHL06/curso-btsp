@@ -4,6 +4,11 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 // Agregar el controlador EventoController
 use App\Http\Controllers\EventoController;
+// Agregar el controlador PonenteController
+use App\Http\Controllers\PonenteController;
+// Agregar el controlador AsistenteController
+use App\Http\Controllers\AsistenteController;
+
 
 /**
 * Rutas para el recurso Evento.
@@ -18,3 +23,31 @@ Route::get('/eventos/{id}', [EventoController::class, 'show']);
 Route::put('/eventos/{evento}', [EventoController::class, 'update']);
 // Eliminar un evento específico
 Route::delete('/eventos/{id}', [EventoController::class, 'destroy']);
+
+/**
+* Rutas para el recurso Ponente.
+*/
+// Recuperar todos los ponentes
+Route::get('/ponentes', [PonenteController::class, 'index']);
+// Almacenar un ponente nuevo
+Route::post('/ponentes', [PonenteController::class, 'store']);
+// Recuperar un ponente específico
+Route::get('/ponentes/{id}', [PonenteController::class, 'show']);
+// Actualizar un ponente específico
+Route::put('/ponentes/{evento}', [PonenteController::class, 'update']);
+// Eliminar un ponente específico
+Route::delete('/ponentes/{id}', [PonenteController::class, 'destroy']);
+
+/**
+* Rutas para el recurso Asistente.
+*/
+// Recuperar todos los asistentes
+Route::get('/asistentes', [AsistenteController::class, 'index']);
+// Almacenar un ponente nuevo
+Route::post('/asistentes', [AsistenteController::class, 'store']);
+// Recuperar un ponente específico
+Route::get('/asistentes/{id}', [AsistenteController::class, 'show']);
+// Actualizar un ponente específico
+Route::put('/asistentes/{evento}', [AsistenteController::class, 'update']);
+// Eliminar un ponente específico
+Route::delete('/asistentes/{id}', [AsistenteController::class, 'destroy']);
