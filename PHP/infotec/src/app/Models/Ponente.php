@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Ponente extends Model
 {
-     protected $table = 'ponentes';
+    protected $table = 'ponentes';
     protected $fillable = [
         'titulo',
         'descripcion',
